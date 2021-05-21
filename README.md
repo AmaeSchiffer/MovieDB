@@ -1,6 +1,7 @@
 # MovieDB
 Dicoding Jetpack Submission
 
+## Getting Started
 Hello Everyone im new in github<br>
 this is my first submission from dicoding academy<br>
 let me show the picture of my apps
