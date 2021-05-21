@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activityDetail"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/backdropDetail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/samplebackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/backgroundimageposter" />
+    <ScrollView
+        android:orientation="vertical"
+        android:id="@+id/svDetail"
+        app:layout_constraintTop_toBottomOf="@id/backdropDetail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nameDetail"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                tools:text="Promise No Never Land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/yearDetail"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                tools:text="2021"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/overviewDetail"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/poppins"
+                android:justificationMode="inter_word"
+                tools:text="@string/sampleoverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="o" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearUtil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="24dp"
+        app:layout_constraintTop_toBottomOf="@id/svDetail"
+        app:layout_constraintBottom_toTopOf="@id/linearWatchTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginEnd="8dp"
+                android:id="@+id/bookmarkDetail"
+                android:background="@drawable/ic_round_bookmark_border"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:contentDescription="@string/backgroundimageposter" />
+            <TextView
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/favoriteDetail"
+                android:background="@drawable/ic_round_favorite_border"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:contentDescription="@string/backgroundimageposter" />
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="@string/love"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:id="@+id/shareDetail"
+                android:background="@drawable/ic_baseline_share"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:contentDescription="@string/backgroundimageposter" />
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="@string/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWatchTrailer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/ic_round_play_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/backgroundimageposter" />
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:text="@string/watch_trailer"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

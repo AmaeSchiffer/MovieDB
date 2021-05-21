@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">Tv Show</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="backgroundimageposter">backgroundImagePoster</string>
+    <string name="circledrawable">circleDrawable</string>
+    <string name="sampleoverview">Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he\'s away from the underworld, the greater the threat that the worst of humanity could escape.</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="share">Share</string>
+    <string name="love">Love</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="moviedb">MovieDB</string>
+</resources>
