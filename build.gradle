@@ -41,4 +41,6 @@ ext {
     glideVersion = '4.11.0'
     gsonVersion = '2.8.6'
     retrofitVersion = '2.9.0'
+    archTestingVersion = '1.1.1'
+
 }
