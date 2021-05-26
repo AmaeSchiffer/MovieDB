@@ -31,7 +31,7 @@ class HomeActivityViewModelTest {
     }
 
     @Test
-    fun gettvShow(){
+    fun getTvShow(){
         homeActivityViewModel.loadDataTv()
         val tvShow = homeActivityViewModel.getTvShow()
         assertNotNull(tvShow)
